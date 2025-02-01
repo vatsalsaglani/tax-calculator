@@ -339,13 +339,77 @@
 <div class="bg-gradient-to-tr from-gray-900 via-gray-800 to-black min-h-screen text-gray-100">
 	<!-- Hero Section -->
 	<div class="p-4 md:p-8 text-center">
-		<h1 class="text-2xl md:text-3xl font-bold mb-2">Union Budget 2025–26</h1>
-		<p class="text-base md:text-lg font-semibold mb-2">
+		<div class="flex items-center justify-center gap-2 mb-4">
+			<h1 class="text-2xl md:text-3xl font-bold text-white">Union Budget 2025–26</h1>
+			<span class="text-xs text-[#FF6500] font-medium bg-[#FF6500]/10 px-2 py-1 rounded-full">#WaahModiji</span>
+		</div>
+		<p class="text-base md:text-lg font-semibold mb-2 bg-gradient-to-r from-[#FF6500] to-[#FF8500] bg-clip-text text-transparent">
 			Zero Income Tax till ₹12 Lakh under New Tax Regime
 		</p>
-		<p class="text-sm md:text-md">
+		<p class="text-sm md:text-md text-gray-400">
 			(₹12.75 lakh for salaried taxpayers with a ₹75,000 standard deduction)
 		</p>
+	</div>
+
+	<!-- Add this after your hero section -->
+	<div class="fixed bottom-24 right-4 md:right-8 z-50 animate-bounce-slow">
+		<div class="relative group">
+			<button 
+				class="bg-[#FF6500]/10 hover:bg-[#FF6500]/20 text-[#FF6500] px-4 py-2 rounded-full flex items-center gap-2 transition-all transform group-hover:scale-105"
+				on:click={() => {
+					alert('Waah Modiji, Waah! 🚀');
+				}}
+			>
+				<span class="text-sm font-medium">#WaahModiji</span>
+				<svg 
+					width="24" 
+					height="24" 
+					viewBox="0 0 100 100" 
+					fill="none" 
+					xmlns="http://www.w3.org/2000/svg"
+					class="text-[#FF6500]"
+				>
+					<!-- White beard -->
+					<path 
+						d="M15 60 Q50 90 85 60 L82 95 Q50 110 18 95 Z" 
+						fill="white"
+						opacity="0.9"
+					/>
+					
+					<!-- Face -->
+					<path 
+						d="M25 35 Q50 25 75 35 L80 60 Q50 70 20 60 Z" 
+						fill="currentColor"
+						opacity="0.8"
+					/>
+					
+					<!-- Glasses - thinner and more defined -->
+					<rect x="30" y="38" width="14" height="10" rx="2" stroke="white" stroke-width="2" fill="none"/>
+					<rect x="56" y="38" width="14" height="10" rx="2" stroke="white" stroke-width="2" fill="none"/>
+					<path d="M44 43 H56" stroke="white" stroke-width="2"/>
+					
+					<!-- White hair -->
+					<path 
+						d="M20 35 Q50 15 80 35 L75 25 Q50 5 25 25 Z" 
+						fill="white"
+						opacity="0.9"
+					/>
+					
+					<!-- Temple hair -->
+					<path 
+						d="M20 35 L25 45 M80 35 L75 45" 
+						stroke="white" 
+						stroke-width="1.5"
+					/>
+				</svg>
+			</button>
+			<div class="absolute -top-2 -right-2">
+				<span class="flex h-3 w-3">
+					<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF6500] opacity-75"></span>
+					<span class="relative inline-flex rounded-full h-3 w-3 bg-[#FF6500]"></span>
+				</span>
+			</div>
+		</div>
 	</div>
 
 	<!-- Mobile Tabs -->
@@ -797,5 +861,20 @@
 	.min-h-screen {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.animate-bounce-slow {
+		animation: bounce 2s infinite;
+	}
+	
+	@keyframes bounce {
+		0%, 100% {
+			transform: translateY(-5%);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		50% {
+			transform: translateY(0);
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
 	}
 </style>

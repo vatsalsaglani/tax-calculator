@@ -1,0 +1,37 @@
+<svg 
+  width="32" 
+  height="32" 
+  viewBox="0 0 100 100" 
+  fill="none" 
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- White beard -->
+  <path 
+    d="M15 60 Q50 90 85 60 L82 95 Q50 110 18 95 Z" 
+    fill="#FF6500"
+  />
+  
+  <!-- Face -->
+  <path 
+    d="M25 35 Q50 25 75 35 L80 60 Q50 70 20 60 Z" 
+    fill="#1E3E62"
+  />
+  
+  <!-- Glasses -->
+  <rect x="30" y="38" width="14" height="10" rx="2" stroke="white" stroke-width="2" fill="none"/>
+  <rect x="56" y="38" width="14" height="10" rx="2" stroke="white" stroke-width="2" fill="none"/>
+  <path d="M44 43 H56" stroke="white" stroke-width="2"/>
+  
+  <!-- White hair -->
+  <path 
+    d="M20 35 Q50 15 80 35 L75 25 Q50 5 25 25 Z" 
+    fill="#FF6500"
+  />
+  
+  <!-- Temple hair -->
+  <path 
+    d="M20 35 L25 45 M80 35 L75 45" 
+    stroke="#FF6500" 
+    stroke-width="1.5"
+  />
+</svg> 
